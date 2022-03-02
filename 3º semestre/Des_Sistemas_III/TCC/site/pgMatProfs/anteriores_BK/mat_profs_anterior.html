@@ -1,0 +1,149 @@
+<?php
+include_once("conecta.php");
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://www.w3schools.com/w3css/4/w3.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/mat_profs.css">
+    <script src="mat_profs_action.js"></script>
+
+    </style>
+    <title>Materiais do Professor</title>
+
+</head>
+
+<body>
+    <div id="conteudo" class="w3-row" style="margin: 10px;">
+        <div id="div_titPrincipais" style="margin-bottom: 15px;">
+            <h1 class="w3-text-blue  w3-left-align">Materiais de Aula</h1>
+            <h5 class="w3-text-blue-gray  w3-left-align">MATÉRIA: LÍNGUA PORTUGUESA</h5>
+        </div>
+
+        <div class="w3-row">
+            <div id="pesquisa" class="quadros w3-card w3-third w3-padding-large w3-margin-right">
+                <label class="tit_labels1" style="font-size: 20px;">Turmas</label><br />
+                <form enctype="multipart/form-data" method="post" action="processa_dados.php">
+                    <div class="w3-margin-bottom">
+                        <label class="tit_labels2">Ensino Fundamental 1</label>
+                        <select name="niveis_escolares" class="w3-select w3-border">
+                            <option value="" disabled selected>Escolha</option>
+                            <option class="w3-select w3-border w3-round ">1º ano A - Fund 1</option>
+                            <option class="w3-select w3-border w3-round ">2º ano A  - Fund 1</option>
+                            <option class="w3-select w3-border w3-round ">3º ano A  - Fund 1</option>
+                            <option class="w3-select w3-border w3-round ">4º ano A  - Fund 1</option>
+                            <option class="w3-select w3-border w3-round ">5º ano A  - Fund 1</option>
+                            <option class="w3-select w3-border w3-round ">6º ano A  - Fund 2</option>
+                            <option class="w3-select w3-border w3-round ">7º ano A - Fund 2</option>
+                            <option class="w3-select w3-border w3-round ">8º ano A - Fund 2</option>
+                            <option class="w3-select w3-border w3-round ">9º ano A - Fund 2</option>
+                            <option class="w3-select w3-border w3-round ">1ª série A - Médio</option>
+                            <option class="w3-select w3-border w3-round ">2ª série A - Médio</option>
+                            <option class="w3-select w3-border w3-round ">3ª série A - Médio</option>
+                        </select>
+                    </div>
+                    
+                    <div class="w3-margin-bottom">
+                        <label class="tit_labels1" style="font-size: 20px">Descreva o material</label><br />
+                        <input name='descricao' class="w3-input" type="text" placeholder="Diga sucintamente sobre qual aula e que fim tem o material">
+                    </div>
+                    <div class="w3-margin-bottom">
+                        <label class="tit_labels1" style="font-size: 20px">Data da aula</label>
+                        <input name="data" class="w3-input" type="date" id="data_aula">
+                    </div>
+
+                    <div class="w3-margin-bottom">
+                        <label class="tit_labels1" style="font-size: 20px">Escolha o material</label>
+                        <input class="w3-input " type="file" name="esc_material">
+                    </div>
+
+                    <div class="w3-right-align">
+                        <button type="submit" class="w3-button w3-border w3-text-color-white" style="background-color: #09C6C6;">Enviar</button>
+                    </div>
+                </form>
+                <div id="d_voltar" class="w3-margin-top">
+                    <button id="btnVoltar" style="border: 0px; background-color:#5F7187; margin-top: 50px;">
+                        <a href="../pgareaProf/areaProf.html" style="text-decoration: none;">
+                            <i id="i_voltar" class="fa fa-arrow-left w3-jumbo w3-hover-text-light-gray" style="text-shadow:1px 1px 0 #444; color: #09C6C6;">
+                                <h2 id="voltar">Voltar</h2>
+                            </i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div id="result_pesquisa" class="quadros w3-rest w3-card w3-padding-large">
+                <div class="margem_abaixo">
+                    <h3>Pesquisa por materiais</h3>
+                </div>
+                <div class="row_selects w3-row w3-margin-top">
+                    <div class="w3-quarter">
+                    <form  method="post" action="listar.php">
+                        <div class="botoes w3-container" style="margin-left:0px;">
+                            <label class="tit_labels2">Ensino Fundamental 1</label><br />
+                            <select name="psquisa_turma" class="w3-select w3-border">
+                                <option value="" disabled selected>Escolha</option>
+                                <option value="1f" class="w3-select w3-border w3-round ">1º ano A</option>
+                                <option class="w3-select w3-border w3-round ">2º ano A</option>
+                                <option class="w3-select w3-border w3-round ">3º ano A</option>
+                                <option class="w3-select w3-border w3-round ">4º ano A</option>
+                                <option class="w3-select w3-border w3-round ">5º ano A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w3-quarter">
+                        <div class="botoes w3-container">
+                            <label class="tit_labels2">Ensino Fundamental 2</label>
+                            <select name="niveis_escolares2" class="w3-select w3-border">
+                                <option value="" disabled selected>Escolha</option>
+                                <option class="w3-select w3-border w3-round ">6º ano A</option>
+                                <option class="w3-select w3-border w3-round ">7º ano A</option>
+                                <option class="w3-select w3-border w3-round ">8º ano A</option>
+                                <option class="w3-select w3-border w3-round ">9º ano A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w3-quarter">
+                        <div class="botoes w3-container">
+                            <label class="tit_labels2">Ensino Médio</label>
+                            <select name="niveis_escolares2" class="w3-select w3-border">
+                                <option value="" disabled selected>Escolha</option>
+                                <option class="w3-select w3-border w3-round ">1ª série A</option>
+                                <option class="w3-select w3-border w3-round ">2ª série A</option>
+                                <option class="w3-select w3-border w3-round ">3ª série A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w3-quarter">
+                        <div class="botoes w3-container">
+                            <label class="tit_labels2"> Data da aula</label>
+                            <input name="data" class="w3-input" type="date" id="data_aula">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-center" style="margin-top: 20px;">
+                        <button type="submit" class="w3-button w3-border w3-text-color-white" style="background-color: #09C6C6;">Pesquisar</button>
+                </div>
+           
+                <div class="margem_abaixo">
+                    <h3>Materiais disponíveis</h3>
+                </div>
+                <div>
+                    <iframe src="listar.php" id="listagem" frameborder="0"></iframe>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 2;
+}
+
+body{
+    background-color:rgb(229,229,229);
+}
+
+p{
+    text-indent: 30px;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 1px 0.1px #333 ;
+}
+
+#corpo{
+    text-align: left;
+    padding: 5%;
+    background-color:  #fff;
+}
+
+#tit_conteudo{
+    background-color: #46A1F4;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form{
+    margin: auto;
+    margin-top: 1%;
+    padding: 2%;
+    text-align: right;
+}
+
+.labels{
+    align-items: left;
+    width: 20%;
+    text-align: left;
+    margin-top: 1%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(78, 75, 75);
+    font-family: 'Segoe UI';
+}
+::placeholder{
+    font-size: 14px;
+    font-family: 'Segoe UI';
+}
+
+.value{
+    font-size: 14px;
+    font-family: 'Segoe UI';
+}
+
+.w3-input{
+    margin-right: 4%;
+    margin-top: 2%;
+    font-size: 16px;
+    line-height: 30px;
+    width: 75%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    
+}
+#inpMSG{
+    height: 100px;
+}
+#btns{
+    margin-top: 10px;
+}
+
+input[type="submit"], button{
+    cursor: pointer;
+    background:  #46A1F4;
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    margin-right: 0%;
+}
+
+input[type="submit"]:hover{
+    
+    background: #FFC804;
+    border: 1px solid #FFC804;
+    font-weight: bold;
+    color:  #fff;
+}
+
+button{
+    cursor: pointer;
+    background: #46A1F4;
+    color: #fff;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    border: #fff 1px solid;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    margin-right: 4%;
+}
+
+button:hover{
+    background: #FFC804;
+    border: 1px solid #FFC804;
+    font-weight: bold;
+    color:  #fff;
+}

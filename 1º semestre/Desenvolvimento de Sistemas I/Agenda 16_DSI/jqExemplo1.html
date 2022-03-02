@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Jquery - Animar</title>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '150px',
+                    width: '150px'
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <button>Animação</button>
+    <div id="div1" style="width:80px;height:80px;background-color:REd;position:relative;"></div>
+    <br>
+    <div id="div2" style="width:80px;height:80px;background-color:blue;position:relative;"></div>
+    <br>
+    <div id="div3" style="width:80px;height:80px;background-color:green;position:relative;"></div>
+    <br>
+</body>
+
+</html>

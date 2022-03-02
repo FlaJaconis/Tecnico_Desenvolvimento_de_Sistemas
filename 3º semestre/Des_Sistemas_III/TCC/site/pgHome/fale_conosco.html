@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h1>Habilidades</h1><h1>Habilidades</h1>, initial-scale=1.0">
+    <link rel="stylesheet" href=https://www.w3schools.com/w3css/4/w3.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/fale_conosco.css">
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+    <div id="d_voltar" class="w3-margin-top">
+        <button id="btnVoltar" style="border: 0px; background-color:rgb(229,229,229); margin-top: 50px;">
+            <a href="index.php" style="text-decoration: none;">
+                <i id="i_voltar" class="fa fa-arrow-left w3-jumbo w3-hover-text-light-gray"
+                    style="text-shadow:1px 1px 0 #444; color: #09C6C6;">
+                    <h2 id="voltar">Voltar</h2>
+                </i>
+            </a>
+        </button>
+    </div>
+    <div id="corpo" class="w3-card-4 w3-display-middle w3-half">
+        <div id="tit_conteudo">
+            <h1>Fale Conosco</h1>
+        </div>
+
+        <form action="">
+
+            <div class="labels"><label>Nome:</label></div>
+            <input class="w3-input w3-border-amber" type="text" id="nome" style="text-align: left" placeholder="Digite seu nome"><br />
+
+            <div class="labels"><label>E-mail:</label></div>
+            <input class="w3-input w3-border-amber" type="text" id="email" placeholder="Digite seu e-mail"><br />
+
+            <div class="labels"><label>Mensagem:</label></div>
+            <input class="w3-input w3-border-amber" id="inpMSG" type="text" id="msg"><br />
+
+            <div id="btns">
+                <input type="submit" value="Salvar" onclick="salvar()" />
+                <button>Limpar</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

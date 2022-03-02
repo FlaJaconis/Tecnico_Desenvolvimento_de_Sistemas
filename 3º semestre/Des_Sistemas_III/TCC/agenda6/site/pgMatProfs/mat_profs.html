@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://www.w3schools.com/w3css/4/w3.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="css/mat_profs.css">
+
+    </style>
+    <title>Materiais do Professor</title>
+</head>
+
+<body>
+    <div id="conteudo" class="w3-half w3-display-middle">
+        <div id="div_titPrincipais" style="margin-bottom: 15px;">
+                <h1 class="w3-text-blue  w3-left-align">Materiais de Aula</h1>
+                <h5 class="w3-text-blue-gray  w3-left-align">MATÉRIA: LÍNGUA PORTUGUESA</h5>
+            </div>
+
+            <div class="w3-row" style="margin-left: 30px;">
+                    <div id="pesquisa" class="quadros w3-card w3-third w3-padding-large w3-margin-right">
+                        <label class="tit_labels1">Turmas</label><br />
+                        <form action="">
+                            <div class="w3-margin-bottom">
+                                <label class="tit_labels2">Ensino Fundamental 1</label>
+                                <select name="tipo_vis" class="w3-select w3-border">
+                                    <option value="" disabled selected>Escolha</option>
+                                    <option class="w3-select w3-border w3-round ">1º ano A</option>
+                                    <option class="w3-select w3-border w3-round ">2º ano A</option>
+                                    <option class="w3-select w3-border w3-round ">3º ano A</option>
+                                    <option class="w3-select w3-border w3-round ">4º ano A</option>
+                                    <option class="w3-select w3-border w3-round ">5º ano A</option>
+                                </select>
+                            </div>
+                            <div class="w3-margin-bottom">
+                                <label class="tit_labels2">Ensino Fundamental 2</label>
+                                <select name="tipo_vis" class="w3-select w3-border">
+                                    <option value="" disabled selected>Escolha</option>
+                                    <option class="w3-select w3-border w3-round ">6º ano A</option>
+                                    <option class="w3-select w3-border w3-round ">7º ano A</option>
+                                    <option class="w3-select w3-border w3-round ">8º ano A</option>
+                                    <option class="w3-select w3-border w3-round ">9º ano A</option>
+                                </select>
+                            </div>
+                            <div class="w3-margin-bottom">
+                                <label class="tit_labels2">Ensino Médio</label>
+                                <select name="tipo_vis" class="w3-select w3-border">
+                                    <option value="" disabled selected>Escolha</option>
+                                    <option class="w3-select w3-border w3-round ">1ª série A</option>
+                                    <option class="w3-select w3-border w3-round ">2ª série A</option>
+                                    <option class="w3-select w3-border w3-round ">3ª série A</option>
+                                </select>
+                            </div>
+                            <div class="w3-margin-bottom">
+                                <label class="tit_labels1">Material</label><br />
+                                <input class="w3-input" type="text" placeholder="Comente ou defina o material">
+                            </div>
+                            <div class="w3-margin-bottom">
+                                <label class="tit_labels1">Data da aula</label>
+                                <input class="w3-input" type="date" id="data_aula">
+                            </div>
+
+                            <div class="w3-margin-bottom">
+                                <label class="tit_labels1">Escolha o material</label>
+                                <input class="w3-input " type="file" id="esc_material">
+                            </div>
+                            <div class="w3-right-align">
+                                <button class="w3-button w3-border w3-text-color-white">Enviar</button>
+                            </div>
+                    </div>
+                    </form>
+                    <div id="result_pesquisa" class="quadros w3-half w3-card w3-padding-large">
+                        <div class="margem_abaixo">
+                            <h3>Materiais disponíveis</h3>
+                        </div>
+                        <div>
+                            <iframe id="nome_prof" src="" frameborder="0"></iframe>
+                        </div>
+                        <div>
+                            <iframe src="" frameborder="0"></iframe>
+                        </div>
+                    </div>
+               
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Jquery - slideDown</title>
+    <script> 
+        $(document).ready(function () {
+            $("#titulo").click(function () {
+                $("#mensagem").slideDown(5000);
+            });
+        });
+    </script>
+    <style>
+        #mensagem,
+        #titulo {
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border: solid 1px white;
+            border-radius: 3px;
+        }
+        #mensagem {
+            padding: 50px;
+            display: none;
+            font-size: 3.5em;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="titulo">Você está pronto para o Jquery</div>
+    <div id="mensagem">SIM</div>
+</body>
+</html>
+</html>
