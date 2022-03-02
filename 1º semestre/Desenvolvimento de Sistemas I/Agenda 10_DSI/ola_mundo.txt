@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title></title>
-</head>
-<body>
-Olá Mundo!! Fiz a minha primeira página WEB!!!!.
-</body>
-</html>
