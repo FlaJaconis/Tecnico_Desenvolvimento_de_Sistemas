@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Casamento de Minha Princesa</title>
+    <script>
+        $(document).ready(function () {
+            $("#pre").click(function () {
+                $("#pre1").fadeToggle(1000);
+            });
+            $("#dia").click(function () {
+                $("#dia1").fadeToggle(1000);
+            });
+        }); 
+    </script>
+</head>
+
+<body class="w3-center">
+    <div class="w3-container" style="color: rgb(195, 165, 116); ">
+        <h1>Zuleika & Ubiratam</h1>
+    </div>
+    <div class="w3-row-padding w3-margin-top " style=" background-color: rgb(195, 165, 116);">
+        <div class="w3-third w3-margin-top">
+            <img src="imagens/n.jpg" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+        </div>
+        <div class="w3-third">
+
+            <br>
+            <div class="w3-content w3-section w3-center" style="">
+                <img class="mySlides" src="Imagens/noiva3.jpg" style="width:100%">
+                <img class="mySlides" src="Imagens/pre3.jpg" style="width:100%">
+                <img class="mySlides" src="Imagens/pre2.jpg" style="width:100%">
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </div>
+        <div class="w3-third w3-margin-top w3-margin-bottom">
+            <img src="imagens/na.jpg" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+        </div>
+    </div>
+    <br>
+    <div id="pre"class="w3-container" style=" background-color: rgb(195, 165, 116); color:white;">
+        <h2>Pré Casamento</h2>
+    </div>
+
+    <div id="pre1" class="w3-row-padding w3-margin-top ">
+        <div  class="w3-third">
+            <div class="w3-card">
+                <img src="imagens/pre1.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off">
+                <div class="w3-container">
+                    <h5>Linda</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="imagens/pre2.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off">
+                <div class="w3-container">
+                    <h5>Casal</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="imagens/pre3.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off">
+                <div class="w3-container">
+                    <h5>Amor</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dia" class=class="w3-container" style=" background-color: rgb(195, 165, 116); color:white;">
+        <h2>Dia da Noiva</h2>
+    </div>
+    <div id="dia1" class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="imagens/noiva1.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off">
+                <div class="w3-container">
+                    <h5>Ela!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="imagens/noiva2.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off">
+                <div class="w3-container">
+                    <h5>O vestido!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card">
+                <img src="imagens/noiva3.jpg" style="width:100%" class="w3-opacity w3-hover-opacity-off">
+                <div class="w3-container">
+                    <h5>Perfeita!</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h5>Fonte das imagens:
+        <a href="https://br.freepik.com/">br.freepik.com/</a>
+    </h5>
+</body>
+
+</html>

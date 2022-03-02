@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.innerfade.js"></script>
+    <title>jqPluggin</title>
+    <script>
+        $(document).ready(function () {
+            $('#slide').innerfade({
+                speed: 1000,
+                timeout: 3000,
+                type: 'sequence'
+
+            });
+        }); 
+    </script>
+</head>
+<body>
+    <div id="slide">
+        <img src="imagens/pre1.jpg" style="width:40%" >
+        <img src="imagens/pre2.jpg" style="width:50%">
+        <img src="imagens/pre3.jpg" style="width:50%">
+    </div>
+</body>
+</html>
